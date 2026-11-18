@@ -5,10 +5,18 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return """
-    <h1>DevOps Portal</h1>
-    <p>Welcome to my DevOps project!</p>
-    <p>Learn. Practice. Improve.</p>
+    <body style="background:#0f172a;
+                 color:white;
+                 text-align:center;
+                 font-family:Arial;
+                 padding:80px;">
+        <h1 style="color:#38bdf8;">DevOps Portal</h1>
+        <h2>Welcome to my DevOps project!</h2>
+        <p>Learn. Practice. Improve.</p>
+        <p>Docker | Git | GitHub | CI/CD</p>
+    </body>
     """
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
